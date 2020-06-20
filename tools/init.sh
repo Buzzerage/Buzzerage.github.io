@@ -11,6 +11,7 @@ set -eu
 CATEGORIES=false
 TAGS=false
 LASTMOD=false
+POSTS=false
 
 WORK_DIR=$(dirname $(dirname $(realpath "$0")))
 
@@ -70,7 +71,12 @@ commit() {
     LASTMOD=true
   fi
 
-  if [[ $CATEGORIES = true || $TAGS = true || $LASTMOD = true ]]; then
+  if [[ ! -z $(git status _posts -s) ]]; then
+    git add _posts
+    POSTS=true
+  fi
+
+  if [[ $CATEGORIES = true || $TAGS = true || $LASTMOD = true || $POSTS = true ]]; then
     msg+=" for post(s)."
     git commit -m "[Automation] $msg"
   else
@@ -84,6 +90,8 @@ commit() {
 main() {
 
   cd $WORK_DIR
+
+  dos2unix _posts/*.md >/dev/null 2>/dev/null
 
   check_status
 

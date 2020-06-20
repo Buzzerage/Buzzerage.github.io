@@ -38,7 +38,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: UA-170068508-1 # change to your verification string
 
 #--------------------------
 
@@ -75,7 +75,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark
+theme_mode: dual
 
 # boolean type, global switch for ToC in posts.
 toc: true
