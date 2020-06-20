@@ -10,12 +10,12 @@
   <div id="profile-wrapper" class="d-flex flex-column">
     <div id="avatar" class="d-flex justify-content-center">
       <a href="{{ site.baseurl }}/" alt="avatar">
-        {% assign avatar_url = "assets/img/sample/avatar.jpg %}
-        {% capture start %}{{ "assets/img/sample/avatar.jpg" | slice: 0 }}{% endcapture %}
+        {% assign avatar_url = "/assets/img/sample/avatar.jpg" %}
+        {% capture start %}{{ "/assets/img/sample/avatar.jpg" | slice: 0 }}{% endcapture %}
         {% if start == '/' %}
-          {% assign avatar_url = "assets/img/sample/avatar.jpg" | prepend: site.baseurl %}
+          {% assign avatar_url = "/assets/img/sample/avatar.jpg" | prepend: site.baseurl %}
         {% endif %}
-        <img src="assets/img/sample/avatar.jpg" alt="avatar">
+        <img src="/assets/img/sample/avatar.jpg" alt="avatar">
       </a>
     </div>
 

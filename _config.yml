@@ -19,7 +19,7 @@ url: 'https://buzzerage.github.io'
 
 author: Buzzerage                  # change to your full name
 
-avatar_url: "assets/img/sample/avatar.jpg"   # support internet resources
+avatar_url: '/assets/img/sample/avatar.jpg'   # support internet resources
 
 github:
   username: Buzzerage             # change to your github username

@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/bash
 #
 # Create HTML pages for Categories and Tags in posts.
 #

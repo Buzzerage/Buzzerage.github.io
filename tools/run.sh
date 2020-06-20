@@ -82,6 +82,7 @@ main() {
   _init
 
   cd ${WORK_DIR}/${CONTAINER}
+
   bash _scripts/sh/create_pages.sh
   bash _scripts/sh/dump_lastmod.sh
 
