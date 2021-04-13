@@ -13,4 +13,4 @@ Para cuando nos encontremos una vulnerabilidad en la cual se puedan subir ficher
 
 Se mostraria la siguiente pàgina si se consigue subir el archivo y acceder a la ubicación del mismo:
 
-![gekkshell_image]({{ "/assets/img/img1.png" | relative_url }})
+![gekkshell_image]({{ "/assets/img/post_upload_RCE/img1.png" | relative_url }})
