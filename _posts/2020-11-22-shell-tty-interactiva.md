@@ -1,5 +1,5 @@
 ---
-title: Conseguir una TTY Shell totalmente interactiva
+title: Conseguir una TTY Shell interactiva
 author: Buzzerage
 date: 2020-11-22 11:33:00 +0800
 categories: [Tutorials]
@@ -14,11 +14,18 @@ Conseguir esta terminal nos dará muchas facilidades a la hora de introducir com
 Partiremos sobre un escenario donde se ha conseguido obtener control de una shell escuchando con el comando `nc -nlvp 4444`:
 
 
-Con el anterior escenario, procederemos a introducir el siguiente comando de python:
+Con el anterior escenario, procederemos a introducir el siguiente comando:
+
+```shell
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+Puede darse el caso en que la máquina en cuestión no tenga python. En este caso podemos optar por utilizar el siguiente comando, el cual es el que más suelo utilizar:
 
 ```shell
 script /dev/null -c bash
 ```
+
 
 A continuación pondremos la terminal de la escucha en segundo plano:
 ```terminal
